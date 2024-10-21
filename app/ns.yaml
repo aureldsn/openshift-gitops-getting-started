@@ -1,0 +1,14 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: cloudtemple-gitops-unmanaged
+  labels:
+    argocd.argoproj.io/managed-by: openshift-cloudtemple-gitops
+    kubernetes.io/metadata.name: cloudtemple-gitops-unmanaged
+    type: customer
+    test: coucou
+  annotations:
+    openshift.io/description: ''
+    openshift.io/display-name: ''
+    openshift.io/node-selector: node-role.kubernetes.io/infra=
+    openshift.io/requester: ocp01-grg-admin-rescue
