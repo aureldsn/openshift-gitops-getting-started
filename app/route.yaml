@@ -3,6 +3,7 @@ kind: Route
 metadata:
   labels:
     app: spring-petclinic
+    ct-router-type: public
   name: spring-petclinic
 spec:
   port:
